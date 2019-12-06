@@ -4,12 +4,12 @@ import csv
 class City():
     def __init__(self, name, lat, lon):
       self.name = name
-      self.lat = lat
-      self.lon = lon
+      self.lat = float(lat)
+      self.lon = float(lon)
 
-    def __repr__(self):
-      return f'City is: {self.name}, lat, lon are: {self.lat}, {self.lon}\n'
-      # return f'{self.name}, {self.lat},{self.lon}'
+    # def __repr__(self):
+    #   # return f'City is: {self.name}, lat, lon are: {self.lat}, {self.lon}\n'
+    #   return f'{self.name}, {self.lat},{self.lon}'
 
 # We have a collection of US cities with population over 750,000 stored in the
 # file "cities.csv". (CSV stands for "comma-separated values".)
@@ -40,7 +40,7 @@ cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
-    print(c)
+    print(c.name, c.lat,c.lon)
 
 # STRETCH GOAL!
 #

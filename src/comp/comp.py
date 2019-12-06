@@ -69,10 +69,10 @@ print(f)
 # The "humans" list should be unmodified.
 print("All names uppercase, age + 5:")
 #Copy's List
-newList = humans.copy()
+# newList = humans.copy()
 
 #Creates an array with the newly copied list
-g = [f'{x.name.upper()}, {x.age + 5}' for x in newList]
+g = [Human(x.name.upper(), x.age + 5) for x in humans]
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
