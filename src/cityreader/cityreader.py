@@ -9,6 +9,7 @@ class City():
 
     def __repr__(self):
       return f'City is: {self.name}, lat, lon are: {self.lat}, {self.lon}\n'
+      # return f'{self.name}, {self.lat},{self.lon}'
 
 # We have a collection of US cities with population over 750,000 stored in the
 # file "cities.csv". (CSV stands for "comma-separated values".)
